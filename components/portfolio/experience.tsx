@@ -3,12 +3,20 @@ import Link from "next/link"
 
 const experiences = [
   {
+    period: "May 2026 — August 2026",
+    title: "Software Engineer Intern",
+    company: "Graphenix Development Inc.",
+    companyUrl: "https://www.gdinrg.com/",
+    description: "Reduced anode defect-detection pipeline runtime by 20%, modeling detection accuracy vs. resource constraints and defining team input SOP. Engineered automated multi-format data extraction ingesting 1,500+ electrode entries for electrochemical analysis.",
+    technologies: ["Professional", "Data Engineering", "Software Development"],
+  },
+  {
     period: "September 2024 — March 2026",
-    title: "Fire Data Analyst",
+    title: "Fire Direction Specialist",
     company: "Republic of Korea Army Artillery School",
     companyUrl: "#",
     description: "Trained 600+ officers annually in analyzing meteorological and artillery-performance data to optimize artillery fire models. Managed data validation and analysis process in the battalion command system.",
-    technologies: ["Professional", "Data Analysis", "Training"],
+    technologies: ["Professional", "Data Analysis", "Military"],
   },
   {
     period: "June 2025 — December 2025",
@@ -19,36 +27,28 @@ const experiences = [
     technologies: ["Presentation", "Translation", "Leadership"],
   },
   {
-    period: "September 2024 — December 2024",
-    title: "SQL for Data Science",
-    company: "IBM (Academic)",
+    period: "May 2024 — August 2024",
+    title: "Research Assistant",
+    company: "CMU Summer Undergraduate Research Apprenticeship",
     companyUrl: "#",
-    description: "Gained foundational knowledge of relational databases and SQL, including building and executing SQL queries. Acquired practical skills to access and query databases using SQL and Python within Jupyter notebooks.",
-    technologies: ["Academic", "SQL", "Python", "Jupyter"],
+    description: "Co-developed an excel dataset on child literature, streamlining analysis process and improving data integrity 33%. Performed EDA on R to visualize bulletin data, analyzing shifts in reviewer behaviors and price across decades",
+    technologies: ["Research", "Python", "Data Mining"],
   },
   {
-    period: "December 2023 — September 2024",
-    title: "Teacher Support and Outreach Team",
+    period: "December 2023 — May 2024",
+    title: "Support and Outreach Assistant",
     company: "Carnegie Mellon University CS Academy",
-    companyUrl: "#",
-    description: "Supported Python-educators from 2000+ schools globally through helpdesk and professional development sessions. Developed Media Kits to streamline curriculum approval process for potential users.",
-    technologies: ["Professional", "Python", "Outreach", "Curriculum"],
+    companyUrl: "https://academy.cs.cmu.edu/",
+    description: "Analyzed support queries from 6000+ educators, identifying trends to guide improvements in Python curriculum. Facilitated curriculum onboarding process with Media Kits, reducing the potential user’s approval effort by 60%",
+    technologies: ["Professional", "Python", "Education"],
   },
   {
-    period: "June 2024 — August 2024",
+    period: "June 2023 — August 2023",
     title: "Web-Development Intern",
     company: "Cedarstone",
     companyUrl: "https://cedarstone.co.kr",
     description: "Facilitated website development for a start-up business consulting firm, integrating design and functionality. Collaborated with the CI designer to construct and embed a cohesive brand identity.",
     technologies: ["Professional", "Web Development", "UI/UX"],
-  },
-  {
-    period: "May 2024 — August 2024",
-    title: "Research Assistant",
-    company: "CMU Summer Undergraduate Research Apprenticeship",
-    companyUrl: "#",
-    description: "Optimized journal-dataset for text mining and analysis. Juxtaposed automation process using R/Python with manual cleaning, enhancing the integrity of DB by 40%.",
-    technologies: ["Academic", "R", "Python", "Data Mining"],
   },
   {
     period: "March 2022 — August 2023",
@@ -69,6 +69,7 @@ export function Experience() {
       </h2>
 
       <div className="space-y-12">
+        <h3 className="text-xl font-semibold text-foreground">Work Experience</h3>
         {experiences.map((exp, index) => (
           <ExperienceCard key={index} {...exp} />
         ))}

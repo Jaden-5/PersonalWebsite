@@ -16,8 +16,9 @@ export function Hero() {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
           Jaden Chang
         </h1>
-        <p className="text-xl md:text-2xl text-primary font-medium">
-          Data Analyst & Interdisciplinary Builder. <br /> Curious About Everything.
+        <p className="text-primary font-medium space-y-1">
+          <span className="block text-xl md:text-2xl">Software Developer &amp; Data Engineer.</span>
+          <span className="block text-lg md:text-xl">I write clean code to power rigorous end-to-end analysis.</span>
         </p>
       </div>
 

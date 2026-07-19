@@ -20,22 +20,6 @@ const projects = [
     technologies: ["Data Science", "UI/UX", "React", "Team Project"],
   },
   {
-    title: "Personal Portfolio Website",
-    description: "The website you are viewing was developed entirely using HTML, CSS, and JavaScript. Now redesigned with Next.js and Tailwind CSS.",
-    image: "/PersonalWebsite/Images/Halla.JPG",
-    link: "https://github.com/Jaden-5/PersonalWebsite",
-    isPaper: false,
-    technologies: ["Next.js", "React", "HTML/CSS", "JavaScript"],
-  },
-  {
-    title: "CedarStone Website Development",
-    description: "Contributed to developing the homepage for a start-up business consulting firm using modern web development practices.",
-    image: "/PersonalWebsite/Images/cslogo.png",
-    link: "https://cedarstone.co.kr",
-    isPaper: false,
-    technologies: ["Web Development", "UI/UX", "Collaboration"],
-  },
-  {
     title: "King of the Pacific (15112 Term Project)",
     description: "Play an online version of Battleship board game with an algorithm of different levels of difficulty.",
     image: "/PersonalWebsite/Images/startbgcopy.jpeg",
@@ -51,6 +35,14 @@ const projects = [
     isPaper: false,
     technologies: ["Python", "Hackathon"],
   },
+  {
+    title: "CedarStone Website Development",
+    description: "Contributed to developing the homepage for a start-up business consulting firm using modern web development practices.",
+    image: "/PersonalWebsite/Images/cslogo.png",
+    link: "https://cedarstone.co.kr",
+    isPaper: false,
+    technologies: ["Web Development", "UI/UX", "Collaboration"],
+  }
 ]
 
 const papers = [
@@ -122,9 +114,9 @@ function ProjectCard({
     <Link
       href={link}
       target="_blank"
-      className="group relative grid md:grid-cols-[200px_1fr] gap-6 p-4 -mx-4 rounded-lg hover:bg-card/50 transition-colors"
+      className="group relative grid md:grid-cols-[200px_1fr] items-start gap-6 p-4 -mx-4 rounded-lg hover:bg-card/50 transition-colors"
     >
-      <div className="relative aspect-video md:aspect-[4/3] rounded-md overflow-hidden border border-border bg-card">
+      <div className="relative aspect-square rounded-md overflow-hidden border border-border bg-card">
         <Image
           src={image}
           alt={title}

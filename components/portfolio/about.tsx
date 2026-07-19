@@ -8,11 +8,11 @@ export function About() {
         About
       </h2>
 
-      <div className="flex flex-col md:flex-row gap-8 mb-8">
+      <div className="flex flex-col md:flex-row items-start gap-8 mb-8">
         <div className="shrink-0">
-          <div className="relative w-32 h-32 md:w-48 md:h-48 overflow-hidden rounded-full border-4 border-card/50">
+          <div className="relative w-32 h-32 md:w-48 md:h-48 overflow-hidden rounded-md border border-border bg-card">
             <Image
-              src="/PersonalWebsite/Images/profile.jpeg"
+              src="/PersonalWebsite/Images/Halla.JPG"
               alt="Jaden Chang"
               fill
               className="object-cover"
@@ -23,7 +23,7 @@ export function About() {
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <h3 className="text-xl font-semibold text-foreground">Hello, I&apos;m Jaden!</h3>
           <p>
-            My name is Jaden Chang — or Inhwa for Korean speakers. I am an interdisciplinary learner drawn to the points of intersection where ideas converge. I&apos;ve always been fascinated by the patterns that emerge when seemingly unrelated domains connect, and this curiosity naturally led me toward <span className="text-foreground font-medium">data science</span>: a field built on uncovering structures, insights, and connections from a vast pool of data.
+            I am an interdisciplinary learner drawn to the points of intersection where ideas converge. I&apos;ve always been fascinated by the patterns that emerge when seemingly unrelated domains connect, and this curiosity naturally led me toward data science: a field built on uncovering structures, insights, and connections from a vast pool of data.
           </p>
         </div>
       </div>

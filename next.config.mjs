@@ -8,6 +8,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  allowedDevOrigins: ['04cb467e0637eb.lhr.life', '*.lhr.life'],
 }
 
 export default nextConfig
